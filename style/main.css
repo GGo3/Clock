@@ -1,0 +1,27 @@
+@keyframes clock-arrow {
+	0% { 
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+
+
+.card {
+	width: 100px;
+	margin: 100px auto;
+	position: relative;
+}
+.clock {
+	width: 300px;
+	position: relative;
+}
+.arrow {
+	position: absolute;
+	top: -15px;
+	right: -215px;
+	animation: clock-arrow 10s linear infinite;	
+}
+
